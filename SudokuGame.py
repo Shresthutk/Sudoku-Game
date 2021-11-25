@@ -3,10 +3,9 @@ from sudokusolver import *
 import requests
 from tkinter import messagebox
 
-# response = requests.get("https://sugoku.herokuapp.com/board?difficulty=easy")
-# sudoku = response.json()['board']
+response = requests.get("https://sugoku.herokuapp.com/board?difficulty=easy")
+sudoku = response.json()['board']
 
-sudoku=[[0,0,0,0,0,4,2,0,6],[0,0,4,0,6,0,5,0,0],[6,0,9,0,0,7,0,0,0],[0,0,0,0,7,5,6,8,0],[4,5,0,0,9,0,3,2,0],[0,0,0,0,0,3,0,0,5],[0,4,0,0,1,8,9,0,2],[8,6,1,9,0,0,0,5,3],[9,7,0,0,0,0,8,4,0]]
 
 #Start window
 starWin=Tk()
