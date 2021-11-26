@@ -1,3 +1,4 @@
-This is sudoku rules
-xyz rule
-flana dhikana
+Only use the numbers 1 to 9,
+Avoid trying to guess the solution to the puzzle,
+Only use each number once in each row, column, & grid,
+ENJOY SOLVING :)
