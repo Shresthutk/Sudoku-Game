@@ -11,7 +11,9 @@ sudoku = response.json()['board']
 starWin=Tk()
     
 starWin.geometry('640x640')
-
+starWin.title('Sudoku')
+icon=PhotoImage(file='gameicon.png')
+starWin.iconphoto(True,icon)
 def loadGameWin():
     #game window
     window=Tk()
@@ -85,5 +87,8 @@ rulesButton=Button(text='Rules',command=rules,font=('cursive',18),
                    fg='cyan',bg='chocolate',activebackground='chocolate',
                    activeforeground='cyan')
 canvas.create_window(320-80,600,window=rulesButton)
+
+sudLabel=Label(text='Sudoku',fg='cyan',font=('lucida handwriting',42),bg='chocolate')
+canvas.create_window(320,70,window=sudLabel)
 
 starWin.mainloop()
